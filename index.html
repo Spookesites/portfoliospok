@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <!--Head predeterminado icons Footer,Stylesheet-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link Rel=StyleSheet Href="style.css" type="text/css" Media="screen">
+        <link Rel=StyleSheet Href="stylev2.scss" type="text/scss" Media="screen">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+
+<!--Todos los scripts de uso-->
+<script>
+  //funcion para abrir el menu
+  function openSideMenu(){
+    document.getElementById("side-nav").style.width = "38%";
+  }
+  //funcion para cerrar el menu
+  function closeSideMenu(){
+    document.getElementById("side-nav").style.width = "0";
+  }
+</script>
+
+<!--Introduccion Slash Screen-->
+<div class="intro">
+  <img src="https://scontent.ftji1-1.fna.fbcdn.net/v/t1.18169-9/18485505_1875912692697599_6479027776638166854_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XcK-ABwkHlQAX9D69LO&_nc_ht=scontent.ftji1-1.fna&oh=00_AfBTwB4jsXvTCD-YlEW03A20k3zEmJoL1Dn7yDuEv-kVjw&oe=641DC2C4" alt="J.R.C">
+  <h1 class="logo">
+      <span class="logo-parts">S</span>
+      <span class="logo-parts">P</span>
+      <span class="logo-parts">O</span>
+      <span class="logo-parts">O</span>
+      <span class="logo-parts">k</span>
+  </h1>
+  <p>portfoliospok</p>
+</div> 
+
+<script src="app.js"></script>
+<!--Navbar/menu responsive-->
+
+<div class="navbar">
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Party_Hard_Logo.png">
+  </div>
+  <div id="nav-icon">
+     <a href="#" class="open-btn" onClick='openSideMenu()'>&#9776;</a>
+  </div>
+  <nav id="nav-menu">
+    <a href="C:\Users\50487\Desktop\Misael MsWhatsApp\404.html">Download</a>
+    <a href="C:\Users\50487\Desktop\Misael MsWhatsApp\changelog.html">changelog</a>
+    <a href="#">About me</a>
+  </nav>
+  <div id="side-nav">
+    <a href="#" class="close-btn" onClick="closeSideMenu()">&#9776;</a>
+    <a href="C:\Users\50487\Desktop\Misael MsWhatsApp\404.html">Download</a>
+    <a href="C:\Users\50487\Desktop\Misael MsWhatsApp\changelog.html">changelog</a>
+    <a href="#">About me</a>
+  </div>
+</div>
+
+<!--Seccion Principal de contenido-->
+
+<main id="main">
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore iure at officiis pariatur, ex ab aliquid facere doloremque et aspernatur cupiditate tempora laudantium commodi fuga obcaecati. Totam, distinctio voluptatem.</h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eveniet sit non assumenda nemo adipisci, praesentium voluptatum. Aspernatur in, aliquid dolores quas architecto ratione totam fuga saepe quos fugiat eveniet?</h1>
+<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore blanditiis praesentium nobis dolor.</h1>
+</main>
+
+<!--Footer Responsive-->
+
+<footer>
+  <div class="footer_container">
+      <div class="social_media">
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <h1>Spook © 2023 All Rights Reserved.</h1>
+    </div>
+</footer>
+</body>
+</html>
