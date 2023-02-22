@@ -1,1 +1,267 @@
+/*  MENU STYLES */
+.navbar #nav-icon{
+  display:none;
+}
+@media only screen and (max-width: 1000px){
+  .navbar #nav-menu{
+    display:none;
+  }
+  .navbar #nav-icon{
+    display:block;
+  }
+}
+.navbar #side-nav{
+  height:100vh;
+  width:0;
+  right:0;
+  top:0;
+  overflow-x:hidden;
+  position:fixed;
+  transition:0.3s;
+}
+.navbar #side-nav a{
+  display:block;
+}
 
+/* GENERAL STYLES */
+body{
+  margin:0;
+  background-color: #adadad;
+
+}
+html{
+  box-sizing: border-box;
+  font-size: 42.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+  align-items: center;
+  text-align: center;
+
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  background:#1f1726;
+  padding: 0;
+}
+.navbar #nav-icon{
+  text-align:right;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  padding:16px 0;
+}
+.navbar #nav-icon a{
+  text-decoration:none;
+  margin-right: 50px;
+  line-height:.5;
+  font-weight:560;
+  font-size:34px;
+  color:white;
+  position:relative;
+  top:5px;
+  border:1px solid white;
+  padding:0 5px 0 4px;
+  border-radius:5px;
+}
+.navbar #nav-icon a:hover{
+  color:#971f7b;
+  border-color:#971f7b;
+}
+.navbar #nav-menu{
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform:capitalize;
+  padding:16px 0;
+}
+.navbar #nav-menu a{
+  text-decoration:none;
+  padding:0 50px;
+  font-weight:600;
+  padding-bottom:14px;
+  font-size:20px;
+  color:white;
+  transition:0.3s;
+}
+.navbar #nav-menu a:hover{
+  color:#971f7b;
+  border-bottom:3px solid #971f7b;
+  border-left:px solid #971f7b;
+}
+.navbar #side-nav{
+  opacity:0.9;
+  z-index:1;
+  text-align:center;
+  background: black;
+  padding:16px 0;
+}
+#side-nav a{
+  text-decoration:none;
+  color:gold;
+  background:rgb(0,0,0, 0.4);
+  padding:8px 0;
+  font-size:22px;
+  margin:-2.8px 20px 18px;
+  text-transform:capitalize;
+  border-radius:4px;
+  border:1px solid #971f7b;
+  font-weight:600;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition:0.3s;
+}
+#side-nav a:hover{
+  color:#770781;
+  border:1px solid #000000;
+  background:linear-gradient(45deg, #212121 0%,#212121 21%,#212121 100%);
+}
+#side-nav .close-btn{
+  text-align:right;
+  font-size:36px;
+  font-weight:560;
+  margin:-16px 54px 30px 0;
+  line-height:1.7;
+  background:transparent;
+  border:none;
+  color: #3c6e46;
+  padding:0;
+}
+#side-nav .close-btn:hover{
+  color:#1e055e;
+  border:none;
+  background:transparent;
+}
+main{
+  text-align:center;
+  padding:15px;
+  font-size:11px;
+  color: #e8e9ea;
+  background-color: #091120;
+  min-height: 95vh;
+}
+img{
+    height: 45px;
+}
+
+#text1{
+  padding:15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:21px;
+  color: #181818;
+  text-align:center;
+  min-height: 75vh;
+
+}
+footer{
+  background: #1f1726;
+  padding: 40px 0;
+}
+#log{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.footer_container{
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo{
+  width: 180px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.social_media{
+  margin: 20px 150px;
+  padding-bottom: 8px;
+}
+
+.social_media a{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-decoration: none;
+  transition: .6s;
+  padding-bottom: 14px;
+}
+
+.social_media a:hover{
+  color: #f22dfe;
+  padding-bottom: 8px;
+}
+div{
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.intro {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  transition: 1s;
+}
+
+.intro img {
+  top: 150px;
+  position: absolute;
+  width: 95px;
+  height: 95px;
+}
+
+.intro p{
+  color: gray;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.logo-parts {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+}
+
+.logo-parts.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo-parts.fade {
+  bottom: 250px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.content{
+  width: 100%;
+  padding: 50px;
+  font-size: 2rem;
+}
+
+@keyframes rotacion {
+	from { transform: rotate(-4deg); }
+	to { transform: rotate(4deg); }
+}
