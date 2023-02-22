@@ -1,7 +1,45 @@
 /*  MENU STYLES */
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .navbar #nav-icon{
   display:none;
 }
+
+* {
+    cursor: none; /* Efecto cursor */
+}
+
+#cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+.trail {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 100;
+  pointer-events: none;
+}
+
+
 @media only screen and (max-width: 1000px){
   .navbar #nav-menu{
     display:none;
@@ -139,8 +177,17 @@ main{
   padding:15px;
   font-size:11px;
   color: #e8e9ea;
-  background-color: #091120;
   min-height: 95vh;
+  background-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%),
+   radial-gradient(circle, rgba(63,94,251,0.5) 0%, rgba(252,70,107,0.5) 100%);
+background-size: 400% 400%;
+background-position: 0% 50%;
+
+/* Set up the animation */
+animation-name: gradient-animation;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
 }
 img{
     height: 45px;
